@@ -6,7 +6,7 @@ USER root
 WORKDIR /tmp
 
 #  Getthe static binaries 
-RUN wget https://download.docker.com/linux/static/stable/aarch64/docker-19.03.8.tgz
+RUN wget https://download.docker.com/linux/static/stable/x86_64/docker-19.03.8.tgz
 
 # Uncompress and remove download file
 RUN tar -xzf docker-19.03.8.tgz && rm docker-19.03.8.tgz
