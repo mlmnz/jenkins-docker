@@ -35,6 +35,6 @@ Check your **Docker version** host before build image (check/edit Dockerfile):
 
         $ docker version
 
-- Asigné directamente el usuario _jenkins_ al grupo _root_. Debo buscar cuantos problemas me dará.
+- I directly assigned user _jenkins_ to the _root_ group. I must look for how many problems it will give me.
 
 
