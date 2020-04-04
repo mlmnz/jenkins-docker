@@ -1,0 +1,15 @@
+
+version: '3'
+
+services: 
+    jenkins:
+        container_name: jenkins_docker
+        build:
+            context: .
+            dockerfile: jenkinsdocker-alpine.Dockerfile
+        ports: 
+            - "8080:8080"
+        volumes: 
+            - /var/run/docker.sock:/var/run/docker.sock
+            - ../Docker/DockerPersistenData/jenkins_docker/jenkins_home:/var/jenkins_home 
+
