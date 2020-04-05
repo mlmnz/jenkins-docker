@@ -4,7 +4,7 @@ If you are running Jenkins inside a Docker container and you need build images w
 I followed some instructions [here](https://getintodevops.com/blog/the-simple-way-to-run-docker-in-docker-for-ci) to build an image from a Dockerfile, but using the binaries installation as indicated in the [Docker guide](https://docs.docker.com/install/linux/docker-ce/binaries).
 
 ## Base image 
-I used two images, one with the jenkins-lte base image based on Debian _(jenkinsdocker.Dockerfile)_ and another one based on Alpine _(jenkinsdocker-alpine.Dockerfile)_
+I used two images, one with the jenkins-lte base image based on Debian _(Dockerfile)_ and another one based on Alpine _(jenkinsdocker-alpine.Dockerfile)_
 
 In the [Jenkins repository](https://hub.docker.com/r/jenkins/jenkins/) at DockerHub, there are several Jenkins tag with different Linux distributions. 
 I think with this same Dockerfile you can use different Jenkins base images (at least linux), changing the FROM line in the Dockerfile.
